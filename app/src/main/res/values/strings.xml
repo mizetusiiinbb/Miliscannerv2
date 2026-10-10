@@ -1,0 +1,95 @@
+<?xml version="1.0" encoding="utf-8"?>
+<resources>
+    <string name="app_name">Miliconfig IPv6 Scanner Pro</string>
+    <string name="brand_name">@miliconfig</string>
+    <string name="developer_name">Milad Jahani</string>
+
+    <!-- Navigation -->
+    <string name="nav_scanner">Scanner</string>
+    <string name="nav_diagnostics">Diagnostics</string>
+    <string name="nav_history">History</string>
+    <string name="nav_about">About</string>
+
+    <!-- Scanner Screen -->
+    <string name="scanner_title">IPv6 Port Scanner</string>
+    <string name="target_mode_single">Single Host</string>
+    <string name="target_mode_cidr">CIDR Subnet</string>
+    <string name="target_mode_batch">Import List</string>
+
+    <string name="input_ipv6_label">IPv6 Target Address</string>
+    <string name="input_ipv6_hint">e.g. 2001:4860:4860::8888 or [::1]</string>
+    <string name="input_cidr_label">IPv6 Subnet (CIDR)</string>
+    <string name="input_cidr_hint">e.g. 2001:db8::/124 (max /120)</string>
+    <string name="input_batch_label">Targets (IPv6 or IPv6:Port, one per line)</string>
+    <string name="input_batch_hint">Paste addresses or load from TXT/CSV file</string>
+
+    <string name="port_selection_label">Target Ports</string>
+    <string name="port_custom_hint">e.g. 80, 443, 8080-8085, 22</string>
+    <string name="preset_web">Web (80, 443, 8080, 8443)</string>
+    <string name="preset_remote">Remote (22, 2222, 3389)</string>
+    <string name="preset_dns">DNS (53, 853)</string>
+    <string name="preset_mail">Mail (25, 465, 587, 993, 995)</string>
+    <string name="preset_vpn">VPN (443, 1194, 51820)</string>
+    <string name="preset_custom">Custom Ports</string>
+
+    <string name="settings_title">Scan Engine Tuning</string>
+    <string name="timeout_label">Connect Timeout (ms): %d</string>
+    <string name="concurrency_label">Concurrency Limit: %d</string>
+
+    <string name="btn_start_scan">Start Scan</string>
+    <string name="btn_stop_scan">Stop</string>
+    <string name="btn_import">Import TXT/CSV</string>
+    <string name="btn_export">Export Results</string>
+    <string name="btn_clear">Clear</string>
+
+    <string name="scan_progress">Scanned %1$d of %2$d (%3$d%%)</string>
+    <string name="open_ports_count">%d Open Ports Found</string>
+    <string name="scan_completed">Scan Completed in %s</string>
+    <string name="scan_cancelled">Scan Cancelled by User</string>
+
+    <!-- Statuses -->
+    <string name="status_open">OPEN</string>
+    <string name="status_refused">REFUSED</string>
+    <string name="status_timeout">TIMEOUT</string>
+    <string name="status_unreachable">UNREACHABLE</string>
+    <string name="status_unknown">UNKNOWN</string>
+
+    <!-- Validation & Safeguards -->
+    <string name="error_invalid_ipv6">Invalid IPv6 address format.</string>
+    <string name="error_invalid_cidr">Invalid CIDR format. Must be IPv6/prefix.</string>
+    <string name="error_cidr_too_large">Safety limit exceeded! Prefix /%1$d contains %2$s hosts. Subnet scanning is restricted to /120 through /128 (max 256 hosts) to prevent network flooding and exhaustive /64 scanning.</string>
+    <string name="error_no_targets">No valid targets specified for scan.</string>
+    <string name="error_no_ports">No valid ports specified. Range must be 1-65535.</string>
+
+    <!-- Diagnostics Screen -->
+    <string name="diag_title">IPv6 Network Diagnostics</string>
+    <string name="diag_local_ipv6">Local IPv6 Address</string>
+    <string name="diag_global_ipv6">Global Unicast IPv6</string>
+    <string name="diag_interfaces">Active Interfaces</string>
+    <string name="diag_connectivity_test">IPv6 Reachability Probe</string>
+    <string name="diag_btn_test">Run Diagnostics</string>
+    <string name="diag_reachable">IPv6 Internet Reachable (RTT: %d ms)</string>
+    <string name="diag_unreachable">IPv6 Internet Unreachable</string>
+    <string name="diag_no_ipv6">No Active IPv6 Address Detected</string>
+
+    <!-- History Screen -->
+    <string name="history_title">Scan History</string>
+    <string name="history_empty">No scan sessions recorded yet.</string>
+    <string name="history_clear_all">Clear All History</string>
+    <string name="history_rescan">Re-Scan</string>
+    <string name="history_delete">Delete</string>
+
+    <!-- Export -->
+    <string name="export_format_csv">CSV (.csv)</string>
+    <string name="export_format_json">JSON (.json)</string>
+    <string name="export_format_txt">Text Report (.txt)</string>
+    <string name="export_dialog_title">Select Export Format</string>
+
+    <!-- About Screen -->
+    <string name="about_title">About Miliconfig IPv6 Scanner</string>
+    <string name="about_version">Version 1.0.0 Pro</string>
+    <string name="about_author">Author: Milad Jahani</string>
+    <string name="about_brand">Brand: @miliconfig</string>
+    <string name="about_description">A specialized native Android utility designed for high-performance TCP connection auditing across explicitly authorized IPv6 networks with strict CIDR safeguards, real socket probing, and zero telemetry.</string>
+    <string name="about_telegram">Telegram: @miliconfig</string>
+</resources>

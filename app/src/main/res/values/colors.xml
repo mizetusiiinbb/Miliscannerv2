@@ -1,0 +1,16 @@
+<?xml version="1.0" encoding="utf-8"?>
+<resources>
+    <color name="brand_green_primary">#00E676</color>
+    <color name="brand_green_dark">#00C853</color>
+    <color name="brand_green_glow">#69F0AE</color>
+    <color name="bg_dark">#0B0F17</color>
+    <color name="bg_surface_dark">#151D2A</color>
+    <color name="card_border_dark">#1F293D</color>
+    <color name="status_open">#00E676</color>
+    <color name="status_refused">#FF5252</color>
+    <color name="status_timeout">#FFB300</color>
+    <color name="status_unreachable">#78909C</color>
+    <color name="status_unknown">#AB47BC</color>
+    <color name="text_primary">#F0F6FC</color>
+    <color name="text_secondary">#8B949E</color>
+</resources>

@@ -1,0 +1,95 @@
+<?xml version="1.0" encoding="utf-8"?>
+<resources>
+    <string name="app_name">اسکنر IPv6 پرو میلی‌کانفیگ</string>
+    <string name="brand_name">@miliconfig</string>
+    <string name="developer_name">میلاد جهانی</string>
+
+    <!-- Navigation -->
+    <string name="nav_scanner">اسکنر</string>
+    <string name="nav_diagnostics">عیب‌یابی</string>
+    <string name="nav_history">تاریخچه</string>
+    <string name="nav_about">درباره</string>
+
+    <!-- Scanner Screen -->
+    <string name="scanner_title">اسکنر پورت IPv6</string>
+    <string name="target_mode_single">آدرس تکی</string>
+    <string name="target_mode_cidr">ساب‌نت (CIDR)</string>
+    <string name="target_mode_batch">لیست دسته‌ای</string>
+
+    <string name="input_ipv6_label">آدرس هدف IPv6</string>
+    <string name="input_ipv6_hint">مثال: 2001:4860:4860::8888 یا [::1]</string>
+    <string name="input_cidr_label">ساب‌نت IPv6 با پیشوند CIDR</string>
+    <string name="input_cidr_hint">مثال: 2001:db8::/124 (حداکثر /120)</string>
+    <string name="input_batch_label">اهداف (IPv6 یا IPv6:Port در هر خط)</string>
+    <string name="input_batch_hint">آدرس‌ها را وارد کنید یا فایل TXT/CSV بارگذاری نمایید</string>
+
+    <string name="port_selection_label">پورت‌های مورد نظر</string>
+    <string name="port_custom_hint">مثال: 80, 443, 8080-8085, 22</string>
+    <string name="preset_web">وب (80, 443, 8080, 8443)</string>
+    <string name="preset_remote">دسترسی از راه دور (22, 2222, 3389)</string>
+    <string name="preset_dns">دی‌ان‌اس (53, 853)</string>
+    <string name="preset_mail">ایمیل (25, 465, 587, 993, 995)</string>
+    <string name="preset_vpn">وی‌پی‌ان (443, 1194, 51820)</string>
+    <string name="preset_custom">پورت‌های سفارشی</string>
+
+    <string name="settings_title">تنظیمات موتور اسکن</string>
+    <string name="timeout_label">مهلت زمانی اتصال (میلی‌ثانیه): %d</string>
+    <string name="concurrency_label">تعداد درخواست‌های همزمان: %d</string>
+
+    <string name="btn_start_scan">شروع اسکن</string>
+    <string name="btn_stop_scan">توقف</string>
+    <string name="btn_import">ورود فایل TXT/CSV</string>
+    <string name="btn_export">خروجی نتایج</string>
+    <string name="btn_clear">پاکسازی</string>
+
+    <string name="scan_progress">اسکن شده: %1$d از %2$d (%3$d%%)</string>
+    <string name="open_ports_count">%d پورت باز یافت شد</string>
+    <string name="scan_completed">اسکن در مدت %s به پایان رسید</string>
+    <string name="scan_cancelled">اسکن توسط کاربر لغو گردید</string>
+
+    <!-- Statuses -->
+    <string name="status_open">باز (OPEN)</string>
+    <string name="status_refused">مسدود/رد شده (REFUSED)</string>
+    <string name="status_timeout">پایان مهلت (TIMEOUT)</string>
+    <string name="status_unreachable">غیرقابل دسترس (UNREACHABLE)</string>
+    <string name="status_unknown">نامشخص (UNKNOWN)</string>
+
+    <!-- Validation & Safeguards -->
+    <string name="error_invalid_ipv6">قالب آدرس IPv6 نامعتبر است.</string>
+    <string name="error_invalid_cidr">قالب CIDR نامعتبر است. فرمت باید IPv6/prefix باشد.</string>
+    <string name="error_cidr_too_large">هشدار امنیتی: پیشوند /%1$d شامل %2$s آدرس است. اسکن رنج تنها بین /120 تا /128 (حداکثر ۲۵۶ آدرس) مجاز است تا از اختلال شبکه و تلاش برای اسکن ناممکن /64 جلوگیری شود.</string>
+    <string name="error_no_targets">هیچ آدرس هدفی جهت اسکن تعیین نشده است.</string>
+    <string name="error_no_ports">پورت معتبری تعیین نشده است. بازه مجاز ۱ تا ۶۵۵۳۵ می‌باشد.</string>
+
+    <!-- Diagnostics Screen -->
+    <string name="diag_title">عیب‌یابی شبکه IPv6</string>
+    <string name="diag_local_ipv6">آدرس محلی IPv6</string>
+    <string name="diag_global_ipv6">آدرس عمومی اینترنت (Global Unicast)</string>
+    <string name="diag_interfaces">کارت‌های شبکه فعال</string>
+    <string name="diag_connectivity_test">تست دسترسی به اینترنت IPv6</string>
+    <string name="diag_btn_test">اجرای عیب‌یابی</string>
+    <string name="diag_reachable">اینترنت IPv6 متصل و در دسترس است (تاخیر: %d میلی‌ثانیه)</string>
+    <string name="diag_unreachable">اینترنت IPv6 در دسترس نیست</string>
+    <string name="diag_no_ipv6">هیچ آدرس IPv6 فعالی روی دستگاه یافت نشد</string>
+
+    <!-- History Screen -->
+    <string name="history_title">تاریخچه اسکن‌ها</string>
+    <string name="history_empty">هنوز هیچ نشست اسکنی ثبت نشده است.</string>
+    <string name="history_clear_all">حذف تمام تاریخچه</string>
+    <string name="history_rescan">اسکن مجدد</string>
+    <string name="history_delete">حذف</string>
+
+    <!-- Export -->
+    <string name="export_format_csv">فایل اکسل/CSV (.csv)</string>
+    <string name="export_format_json">داده‌های ساختاریافته JSON (.json)</string>
+    <string name="export_format_txt">گزارش متنی (.txt)</string>
+    <string name="export_dialog_title">انتخاب فرمت خروجی</string>
+
+    <!-- About Screen -->
+    <string name="about_title">درباره اسکنر IPv6 میلی‌کانفیگ</string>
+    <string name="about_version">نسخه ۱.۰.۰ پرو</string>
+    <string name="about_author">توسعه‌دهنده: میلاد جهانی</string>
+    <string name="about_brand">برند: @miliconfig</string>
+    <string name="about_description">ابزار بومی و حرفه‌ای اندروید جهت بررسی و پایش ارتباطات پروتکل TCP در شبکه‌های مجاز IPv6، با محافظت هوشمند از منابع سخت‌افزاری و پردازش کاملاً آفلاین درون دستگاه بدون ارسال اطلاعات به سرورهای خارجی.</string>
+    <string name="about_telegram">کانال تلگرام: @miliconfig</string>
+</resources>
